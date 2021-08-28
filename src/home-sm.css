@@ -1,0 +1,179 @@
+/* Set page alignment to 1em */
+
+
+
+/* Ensure the header occupy a minimum of 60% of viewport height */
+header.row {
+    min-height: 60vh;
+}
+
+
+.header {
+    background-color: #222;
+
+    background-image: url("./assets/diver-banner-image-375.jpg");
+    background-size: contain;
+
+
+}
+
+
+
+
+.col-sm-12 {
+    grid-column: span 12;
+}
+
+
+ /*** Ensure the search-box is fixed-positioned to the viewport ****/
+ .search-box {
+    
+   
+     position: fixed; 
+     /* The search box is completely removed from the grid layout.
+     As such, set width to 100% to ensure entire width is occupied */
+     width: 100%;
+     
+ }
+
+
+.sm-search-box-container {
+ 
+    /* Padding of 1em to align with other content of the page */
+    padding: 1em;
+
+}
+
+
+.sm-search-box {
+    padding-top: 12px;
+
+    padding-bottom: 12px;
+    border: none;
+    border-radius: 22px / 50%;
+
+    background-color: white;
+
+    display: flex;
+    flex-flow: row;
+
+    justify-content: center;
+}
+
+.sm-search-box > div {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-end;
+    padding: 0;
+    height: 24px;
+}
+
+      
+.sm-search-box  input {
+            
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    flex: 1;
+    padding-top: 0.25em;
+    padding-left: 8px;
+    margin: 0;
+    border: none;
+
+    font-family: 'Ubuntu', sans-serif;
+       
+         
+}
+
+
+/*******************************************************
+ ***************** Main Content ************************/
+
+/* main {
+    display: grid;
+    grid-auto-rows: max-content; 
+    grid-template-columns: 100vw;
+    grid-auto-flow: row dense;
+    gap: 0.675em;
+
+} */
+
+
+
+ .horizontal-sm-grid-slider {
+    display: grid;
+    grid-template-columns: 0.5em repeat(4, 275px) 0.5em;
+    grid-auto-rows: minmax(275px, max-content);
+    grid-auto-flow: column dense;
+    overflow-x: scroll;
+    gap: 0.5em;
+
+}
+
+.horizontal-sm-grid-slider::before, .horizontal-sm-grid-slider::after{
+    content: '';
+}
+
+.horizontal-sm-grid-slider::-webkit-scrollbar {
+    display: none;
+}
+
+section > h3:first-child {
+    /* background-color: red; */
+    margin: 0 1em 0 1.3em;
+    padding: 0.5em 0;
+    
+}
+
+/* All <div> children of horizontal grid slider */
+.horizontal-sm-grid-slider > div {
+    border-radius: 1em;
+
+    background-color: teal;
+}
+
+
+.explore-pools-grid-item {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.explore-pools-grid-item > img{
+    width: 100%;
+    height: 275px;
+
+    border-radius: 1em;
+}
+
+
+
+
+.pool-listing-container {
+
+    margin: 0 1.5em; /* Extra .5em is to account for grid gap */
+
+    background-image: url("./assets/diver-pool-listing-image-768px.jpg");
+    background-size: cover;
+
+}
+
+
+.pool-listing-content {
+    grid-column: span 12;
+    grid-row: span 1;
+}
+
+
+/*********************************************************
+*************** Footer *********************************/
+
+.footer {
+            
+    padding: 0 1em;
+  
+     
+    
+ }
+
+
+ 

@@ -1,0 +1,394 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+/*********** Flex layout *********************/
+            
+.r-fr {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.r-align-ctr {
+    align-items: center;
+}
+.fh {
+    height: 100%;
+}
+
+.i-fr {
+    flex: 1;
+    /* background-color: teal; */
+}
+.j-fr {
+    flex: 1;
+}
+
+.c-fr {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.c-align-ctr {
+    justify-content: center;
+}
+
+
+.fw {
+    width: 100%;
+}
+
+body {
+    margin: 0;  /* Ensure the body occupies the entire viewport width */
+    font-family: 'Ubuntu', sans-serif; /* Specifying the fonts to use */
+}
+
+
+#root {
+    min-height: 100vh;
+    
+}
+
+/***************** Grid Layouts Defs **********************************/
+
+.grid-rows {
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: 0.675em;
+}
+
+/* Each row should occuply the entire width */
+.row {
+    grid-auto-columns: 1fr;
+}
+
+.col-12 {
+    grid-column: span 12;
+}
+
+/* grid intended for the pool listing container */
+.pl-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+
+
+
+/******************************************************************/
+.header, .footer {
+    /* Display the header as a grid regardless of screen sizes */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: max-content;
+
+}
+
+
+
+.explore-pools-grid-item > p,
+.explore-pools-grid-item > span {
+    margin: 0;
+    text-align: center;
+}
+
+
+.book-for-event-item > span{
+    display: block;
+    position: relative;
+    width: calc(100% - 6em);
+    background-color: #222;
+    color: white;
+    padding: 0.5em 2em;
+    text-align: center;
+    margin: 0 auto;
+    bottom: -1em;
+    top: calc(100% - 3em);
+    border-radius: 0.675em; 
+}
+
+
+.pool-listing-container {
+    height: 380px;
+    border-radius: 1em;
+   background-color:  rgba(169, 169, 169, 0.5);
+
+}
+
+
+.pool-listing-content {
+    padding: 1em 2em 0.5em;
+    background-color: #222;
+    
+    
+
+}
+
+.pool-listing-content > p, 
+.pool-listing-content > a {
+    
+    text-align: center; 
+    padding: 0.5em 0 0; 
+}
+
+.pool-listing-content > p{
+    margin: 0;
+    color: white;
+}
+
+.pool-listing-content > a {
+    text-decoration: none;
+    align-self: center;
+    display: block;
+    width: fit-content;
+    padding: 0.5em;
+    margin: 0.5em auto;
+
+    background-color: white;
+    color: #222;
+    border-radius: 0.5em
+}
+
+
+
+
+    
+            
+/****************************************************************************
+
+    General Styles for Search Box container for medium and large screen sizes 
+
+*****************************************************************************/
+         
+.md-search-box-container, .lg-search-box-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    
+}
+
+.ls-search-box {
+    background-color: white;
+    display: flex;
+    flex-flow: row;
+    border-radius: 2em / 50%;
+    align-items: center;
+}
+
+.ls-search-box-item {
+    
+    height: fit-content;
+}
+
+
+.ls-search-box-item:first-child {
+    padding-left: 2em;
+    border-right: 1px solid #a9a9a9;
+    
+}
+
+.ls-search-box-item:last-child {
+    padding-right: .675em;
+    padding-top: 0.675em;
+    padding-bottom: 0.675em;
+}
+
+.ls-search-box-item:nth-child(2) {
+    padding-left: 1em;
+    border-right: 1px solid #a9a9a9;
+    
+
+}
+.ls-search-box-item:nth-child(3) {
+    padding-left: 1em;
+}
+
+
+.ls-search-box-item:hover {
+    background-color: #a9a9a9;
+    height: 100%;
+    border-radius: inherit;
+}
+
+
+
+
+
+
+
+.title, .desc {
+  padding: 0;
+  margin: 0;
+  /* background-color: red; */
+
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 0.875em;
+    
+}
+.desc{
+    font-size: 1em;
+    
+}
+
+.ls-search-box-btn {
+    padding: 0;
+    border: none;
+    background-color: tomato;
+    margin: 0;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+
+}
+
+.ls-search-box-btn:hover {
+    background-color: darkred;
+}    
+
+
+.nav-link {
+    text-align: center;
+    text-decoration: none;
+    padding: 1em 2em;
+ 
+    color: white;
+
+
+    
+    
+}
+
+.nav-link:hover {
+    text-decoration-line: underline;
+    text-underline-offset: .25em;
+    text-decoration-thickness: 3px;
+}
+
+.list-a-pool {
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5em 2em;
+    
+    color: white;
+    font-size: 0.875em;
+
+    align-self: center;
+
+    /* flex: 1; */
+
+    border-radius: 1.2em / 50%;
+
+    background-color: rgba(169, 169, 169, 0.5);
+    
+}
+
+.menu-btn {
+
+    align-self: center;
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 1.2em / 50%;
+
+    margin-left: 0.5em;
+}
+
+
+/************************ Footer *****************************/
+.footer {
+    background-color: rgba(169, 169, 169, 0.2);
+    border-top: 1px solid rgba(169,169, 169, 0.8);
+}
+
+
+ /** Select all <div> children of footer element excluding div.footer-bottom */
+ .footer > div:not(.footer-bottom) {
+     border-bottom: 1px solid #a9a9a9;
+
+ }
+
+ .footer > div:not(.footer-bottom) > h3 {
+     margin: 0;
+     color: #222;
+     font-weight: bolder;
+     font-stretch: ultra-expanded;
+     font-size: 1em;
+     padding: 1em 0;
+     
+ }
+
+ .footer ul {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+ }
+
+ .footer  li {
+     list-style: none;
+ }
+
+ .footer a {
+     text-decoration: none;
+     color: #222;
+     padding: .5em 0;
+
+    
+     display: block;
+     width: 100%;
+ }
+
+
+
+ .footer .footer-bottom {
+     padding-top: 1em;
+     padding-bottom: 1em;
+     text-align: center;
+     background-color: transparent;
+ }
+
+ .footer-bottom span {
+     width: 100%;
+     align-self: center;
+     color: inherit; 
+ } 
+
+@media screen and (max-width: 768px) {
+    /* Hide these containers */
+.brand-logo, .nav-links, .user-login, .md-search-box-container {
+    display: none;
+}
+}
+
+@media screen and (max-width: 1200px) {
+    .sm-md-gtc{
+        grid-template-columns: calc(100vw - 1em);
+    }
+
+    
+}
+
+.explore-pools-grid-item  > img {
+    width: 100%;
+    border-radius: 1em;
+}
+
+.explore-pools-grid-item {
+    display:  flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    
+}
+
+.horizontal-sm-grid-slider > div {
+    border-radius: 1em;
+
+    background-color: rgba(169, 169, 169, 0.2);
+
+
+}

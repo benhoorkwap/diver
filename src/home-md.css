@@ -1,0 +1,145 @@
+
+
+
+
+.sm-search-box-container {
+    display: none;
+}
+.col-md-9 {
+    grid-column: span 9;
+    
+}
+
+.col-md-4 {
+    grid-column: span 4;
+}
+
+.col-md-8 {
+    grid-column: span 8;
+}
+.col-md-3 {
+    grid-column: span 3;
+   
+
+}
+
+.col-md-6 {
+    grid-column: span 6;
+}
+
+.col-md-fr {
+    grid-column: 1fr;
+}
+
+.col-md-auto {
+    grid-column: auto;
+}
+
+.col-md-12 {
+    grid-column: span 12;
+    
+}
+
+.user-login {
+    order: -1;
+}
+
+.brand-logo {
+    order: -1;
+}
+
+.ls-search-box {
+    grid-column: span 12;
+
+}
+
+
+.header {
+    min-height: 80vh;
+    padding: 0 2em;
+
+    background-color: #222;
+
+    gap: .5em;
+
+    background-image: url("./assets/diver-banner-image-768px.jpg");
+    background-size: cover;
+
+}
+
+/******************** Main *****************************/
+/* main {
+    
+    display: grid;
+    grid-auto-rows: max-content;
+    gap: 0.675em;
+
+
+} */
+
+
+/* Necessary to prevent overflowing
+main > section{
+    width: 100vw;
+} */
+
+.horizontal-sm-grid-slider {
+
+
+    display: grid;
+    grid-template-columns: 1em repeat(4, minmax(275px, max-content)) 1em;
+    grid-auto-rows: minmax(275px, max-content);
+    grid-auto-flow: column dense;
+    overflow-x: scroll;
+
+    gap: 1em;
+}
+
+.horizontal-sm-grid-slider::before, .horizontal-sm-grid-slider::after{
+    content: '';
+}
+
+.horizontal-sm-grid-slider::-webkit-scrollbar {
+    display: none;
+}
+
+
+/************************************************************
+
+
+
+
+***********************************************************/
+main > section > h3  {
+    margin: 0 2em;
+    padding: 0.875em 0;
+}
+
+
+
+/************** Pool listing Styles ********************/
+
+.pool-listing-container {
+    margin: 0 2em;
+
+    background-image: url("./assets/diver-pool-listin-image-1200px.jpg");
+    background-size: cover;
+    
+}
+
+.pool-listing-content {
+    grid-row: span 2;
+    grid-column: span 4;
+    
+}
+
+/*********************************************************
+*************** Footer *********************************/
+
+.footer {
+            
+    padding: 0 2em;
+    
+     
+    
+ }

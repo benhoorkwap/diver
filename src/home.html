@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <!-- Document metadata -->
+        <meta charset="utf-8">
+        <meta name="author" content="Benedict Hoorkwap">
+        <meta name="description" content="Sample Presentation">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+        <!-- Stylesheets for different media -->
+        <link rel="stylesheet" media="screen and (max-width: 768px)" href="./home-sm.css">
+        <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1200px)" href="./home-md.css">
+        <link rel="stylesheet" media="screen and (min-width: 1200px)" href="./home-lg.css">
+        <link rel="stylesheet" href="./home.css">
+
+        <!-- Font sizes -->
+
+        <!-- Title -->
+        <title>Diver - Home</title>
+    </head>
+
+    <body>
+        <!-- Page's container -->
+        <div id="root" class="grid-rows">
+
+            <!--Header -->
+            
+            <header class="header row">
+                <div class="col-md-8 col-lg-3 brand-logo">Brand Logo</div>
+                <div class="col-md-12 col-lg-9 r-fr c-align-ctr nav-links">
+                   <a class="nav-link" href="/">Places to swim</a>
+                   <a class="nav-link" href="/">Indoor pools</a>
+                   <a class="nav-link" href="/">Outdoor pools</a>
+               </div>
+               <div class="col-md-4 col-lg-3 r-fr user-login">
+                   <a class="list-a-pool" href="/">List a pool</a>
+                   <button class="menu-btn">Menu</button>
+               </div>
+
+               <div class="col-sm-12 col-md-12 col-lg-12 search-box"> 
+                    <section class="sm-search-box-container">
+                       <form class="sm-search-box">
+                           <div>
+                               <object width="24" height="24" data="./assets/search-icon-24x24.svg"></object>
+                               <input placeholder="Where are you swimming?" type="text" />
+                           </div>
+                       </form>  
+                   </section> 
+
+                  <!----- Medium and large screen  -----> 
+                     <section class="md-search-box-container lg-search-box-container">
+                       <form class="ls-search-box">
+                            <div class="ls-search-box-item i-fr c-fr c-align-ctr">
+                               <p class="title">Location</p>
+                               <p class="desc">Where are you swimming?</p>
+                           </div>
+
+                           <div class="ls-search-box-item i-fr c-fr c-align-ctr">
+                               <p class="title">Check in</p>
+                               <p class="desc">Add dates</p>
+                           </div>
+
+                           <div class="ls-search-box-item i-fr r-fr r-align-ctr">
+                                   <div class="j-fr c-fr c-align-ctr">
+                                       <p class="title">Check in</p>
+                                       <p class="desc">Add dates</p>
+                                   </div>
+
+                                   <button class="ls-search-box-btn">
+                                       <object data="./assets/search-icon-32x32.svg" width="48" height="48"></object>
+                                   </button>
+                                 
+                           </div> 
+                       </form>
+                   </section> 
+                </div>     
+            </header> 
+
+
+           <!-- Main content -->
+
+         <main class="grid-rows sm-md-gtc row">
+             <section class="explore-pools">
+                <h3>Explore pools nearby</h3>
+                <div class="horizontal-sm-grid-slider">
+                    <div class="explore-pools-grid-item">
+                        <img src="./assets/swimming-pool-3.jpg"/>
+                        <p>Gorgeous Pool in Ikoyi</p>
+                        <span>N2,500</span>
+                    </div>
+                    <div class="explore-pools-grid-item">
+                        <img src="./assets/swimming-pool-3.jpg"/>
+                        <p>Gorgeous Pool in Ikoyi</p>
+                        <span>N2,500</span>
+                    </div>
+                    <div class="explore-pools-grid-item">
+                        <img src="./assets/swimming-pool-3.jpg"/>
+                        <p>Gorgeous Pool in Ikoyi</p>
+                        <span>N2,500</span>
+                    </div>
+                    <div class="explore-pools-grid-item">
+                        <img src="./assets/swimming-pool-3.jpg"/>
+                        <p>Gorgeous Pool in Ikoyi</p>
+                        <span>N2,500</span>
+                    </div>
+                </div>
+            </section> 
+
+             <section class="book-for-event">
+                <h3>Book for an event</h3>
+                 <div class="horizontal-sm-grid-slider">
+                     <div class="book-for-event-item"><span>Birthday</span></div>
+                    <div class="book-for-event-item"><span>Pool Party</span></div>
+                    <div class="book-for-event-item"><span>Baby shower</span></div>
+                    <div class="book-for-event-item"><span>Bachelorette</span></div> 
+                </div> 
+            </section> 
+
+             <section class="pool-listing">
+                <h3>List a pool</h3>
+                <div class="pool-listing-container pl-grid">
+                    <div class="pool-listing-content c-fr c-align-ctr">
+                        <p>List a pool and discover new opportunities to earn extra income</p>
+                        <a>Learn more</a>
+                    </div>
+                    
+                </div>
+            </section> 
+
+            </main> 
+
+             <!-- footer section -->
+             <footer class="footer row">
+
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <h3>HELP CENTER</h3>
+                    <ul>
+                        <li> <a href="./" class="footer-link">Swimmers</a></li>
+                        <li> <a href="./" class="footer-link">Owners</a></li>
+                        <li> <a href="./" class="footer-link">List a Pool</a></li>
+                        <li> <a href="./" class="footer-link">Faqs</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <h3>CONTACT</h3>
+                    <ul>
+                        <li> <a href="./" class="footer-link">Swimmers</a></li>
+                        <li> <a href="./" class="footer-link">Owners</a></li>
+                        <li> <a href="./" class="footer-link">List a Pool</a></li>
+                        <li> <a href="./" class="footer-link">Faqs</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <h3>FAQS</h3>
+                    <ul>
+                        <li> <a href="./" class="footer-link">Swimmers</a></li>
+                        <li> <a href="./" class="footer-link">Owners</a></li>
+                        <li> <a href="./" class="footer-link">List a Pool</a></li>
+                        <li> <a href="./" class="footer-link">Faqs</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 footer-bottom">
+                    <span>&copy;2021 All rights Reserved.</span>
+                </div>
+            </footer> 
+
+        </div>
+    </body>
+</html>

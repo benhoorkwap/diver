@@ -1,0 +1,13 @@
+<svg
+    version="1.1"
+    width="48"
+    height="48"
+    xmlns="http://www.w3.org/2000/svg">
+
+    <!-- <circle cx="24" cy="24" r="24" fill="tomato"/> -->
+    
+    <circle cx="22" cy="22" r="7" fill="transparent" stroke="white" stroke-width="3"/>
+    <path d="M26.9497 26.9497 L32 32" stroke="white" stroke-width="3"/>
+    
+    
+</svg>
